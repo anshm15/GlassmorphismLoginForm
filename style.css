@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+background-position: 0 50%;
+    }
+}
+.formbox{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.formbox .container{
+    display: flex;
+    justify-content: center;    
+    margin-top: 40px;
+}
+.formbox .container h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+    text-transform: uppercase;
+}
+.formbox form{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+}
+.formbox form .inputbx{
+    margin-top: 28px;
+    display: grid;
+}
+.formbox form .inputbx label{
+    text-align: left;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.formbox form .inputbx input{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 16px;
+    padding: 7px 0px;
+    border-radius: 6px;
+    padding-left: 25px;
+}
+.formbox form .inputbx .fa-user{
+    position: absolute;
+    top: 39%;
+    left: 49px;
+    color: #fff;
+    transform: scale(0.9);
+}
+.formbox form .inputbx .fa-lock{
+    position: absolute;
+    top: 61%;
+    left: 49px;
+    color: #fff;
+    transform: scale(0.9);
+}
+.formbox form .inputbx button{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 16px;
+    padding: 7px 0px;
+    border-radius: 6px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.formbox form .inputbx button:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
